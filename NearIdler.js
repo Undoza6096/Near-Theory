@@ -82,7 +82,7 @@ var init = () => {
     {
         let getDesc = (level) => "s_1=2^{" + level + "}";
         let getInfo = (level) => "s_1=" + getS1(level).toString(0);
-        s1 = theory.createUpgrade(5, currency, new ExponentialCost(1.79e308, Math.log2(1e100)));
+        s1 = theory.createUpgrade(6, currency, new ExponentialCost(1.79e308, Math.log2(1e100)));
         s1.getDescription = (_) => Utils.getMath(getDesc(s1.level));
         s1.getInfo = (amount) => Utils.getMathTo(getInfo(s1.level), getInfo(s1.level + amount));
     }
@@ -91,7 +91,7 @@ var init = () => {
     {
         let getDesc = (level) => "s_2=666^{" + level + "}";
         let getInfo = (level) => "s_2=" + getS2(level).toString(0);
-        s2 = theory.createUpgrade(5, currency_SUS, new ExponentialCost(10000, Math.log2(2)));
+        s2 = theory.createUpgrade(7, currency_SUS, new ExponentialCost(10000, Math.log2(2)));
         s2.getDescription = (_) => Utils.getMath(getDesc(s2.level));
         s2.getInfo = (amount) => Utils.getMathTo(getInfo(s2.level), getInfo(s2.level + amount));
     }
@@ -100,7 +100,7 @@ var init = () => {
      {
         let getDesc = (level) => "s_3=(10^{150})^{" + level + "}";
         let getInfo = (level) => "s_3=" + getS3(level).toString(0);
-        s3 = theory.createUpgrade(5, currency_SUS, new ExponentialCost(1e8, Math.log2(10)));
+        s3 = theory.createUpgrade(8, currency_SUS, new ExponentialCost(1e8, Math.log2(10)));
         s3.getDescription = (_) => Utils.getMath(getDesc(s3.level));
         s3.getInfo = (amount) => Utils.getMathTo(getInfo(s3.level), getInfo(s3.level + amount));
     }
@@ -109,7 +109,7 @@ var init = () => {
     {
         let getDesc = (level) => "s_4=3^{" + level + "}";
         let getInfo = (level) => "s_4=" + getS4(level).toString(0);
-        s4 = theory.createUpgrade(5, currency_SUS, new ExponentialCost(1e308, Math.log2(1e200)));
+        s4 = theory.createUpgrade(9, currency_SUS, new ExponentialCost(1e308, Math.log2(1e200)));
         s4.getDescription = (_) => Utils.getMath(getDesc(s4.level));
         s4.getInfo = (amount) => Utils.getMathTo(getInfo(s4.level), getInfo(s4.level + amount));
     }
