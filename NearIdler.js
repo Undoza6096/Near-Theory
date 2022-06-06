@@ -4,10 +4,10 @@ import { BigNumber } from "./api/BigNumber";
 import { theory } from "./api/Theory";
 import { Utils } from "./api/Utils";
 
-var id = "my_custom_theory_id";
-var name = "My Custom Theory";
+var id = "near_theory";
+var name = "Near Theory";
 var description = "A basic theory.";
-var authors = "Gilles-Philippe Paillé";
+var authors = "Karen";
 var version = 1;
 
 var currency;
