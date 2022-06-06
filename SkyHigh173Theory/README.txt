@@ -1,1 +1,1 @@
-httsp://github.com/Skyhigh173/Theory/
+https://github.com/Skyhigh173/Theory/
