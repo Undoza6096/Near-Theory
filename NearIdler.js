@@ -188,14 +188,14 @@ var tick = (elapsedTime, multiplier) => {
     currency_SUS = currency.value.log10()
     currency.value += dt * bonus * getC1(c1.level).pow(getC1Exponent(c1Exp.level)) *
                                    getC2(c2.level).pow(getC2Exponent(c2Exp.level)) *
-                                   getC3(c3.level).pow(getC3Exponent(c3Exp.level))
-                                   getQ1(q1.level).pow(getQ1Exponent(q1Exp.level))
+                                   getC3(c3.level).pow(getC3Exponent(c3Exp.level)) *
+                                   getQ1(q1.level).pow(getQ1Exponent(q1Exp.level)) *
                                    getQ2(q2.level) *
                                    getQ3(q3.level) *
                                    getS1(s1.level) *
                                    getS2(s2.level) *
-                                   getS3(s3.level)
-                                   getS4(s4.level)
+                                   getS3(s3.level) *
+                                   getS4(s4.level);
 }
 
 var getPrimaryEquation = () => {
